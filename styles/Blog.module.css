@@ -1,0 +1,137 @@
+.container main {
+  min-height: calc(100vh - 20.5rem);
+}
+.container main header {
+  padding-top: 10.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container main header img {
+  width: 5rem;
+}
+
+.container main header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+.container main header h2 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.container main > h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.container main .posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.75rem 2rem;
+  max-width: 1120px;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 0 2.5rem;
+}
+
+.container main .posts .post {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #F2F2F2;
+  border-radius: 0.5rem;
+  height: max-content;
+  overflow: hidden;
+}
+
+.container main .posts .post .content {
+  padding: 1rem 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.container main .posts .post .image_container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #bbb;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.container main .posts .post img {
+  display: none;
+}
+
+.container main .posts .post span {
+  font-size: 0.875rem;
+  color: rgb(250, 83, 139);
+}
+
+.container main .posts .post h1 {
+  margin: 1rem 0;
+  font-size: 1.75rem;
+  -webkit-line-clamp: 2;
+  display: flex;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+.container main .posts .post p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-line-clamp: 3;
+  display: flex;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.container .controls {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.container .controls button {
+  background: none;
+  border: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.container .controls button svg {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.container .controls button:last-child svg {
+  transform: rotate(180deg);
+}
+.container .controls span {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1023px) {
+  .container main header h1 {
+    font-size: 2rem;
+  }
+  .container main header h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .container main .posts {
+    grid-template-columns: 1fr;
+  }
+}
